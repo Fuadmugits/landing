@@ -1,0 +1,13 @@
+.chef { padding: 8rem 2.5rem; background: var(--dark-2); }
+.container { max-width: 1200px; margin: 0 auto; display: grid; grid-template-columns: 1fr 1.2fr; gap: 6rem; align-items: center; }
+.visual {}
+.frame { position: relative; height: 580px; overflow: hidden; }
+.img { object-fit: cover; object-position: top center; }
+.imgAccent { position: absolute; bottom: 0; left: 0; right: 0; height: 200px; background: linear-gradient(to top, var(--dark-2), transparent); }
+.bio { font-size: 1rem; color: var(--white-dim); line-height: 1.9; margin-bottom: 1.25rem; }
+.achievements { margin-top: 2.5rem; display: flex; flex-direction: column; gap: 1.25rem; }
+.achievement { display: flex; align-items: flex-start; gap: 1rem; padding: 1rem 1.25rem; border-left: 2px solid var(--gold); background: rgba(201,168,76,0.04); }
+.icon { font-size: 1.2rem; color: var(--gold); margin-top: 2px; flex-shrink: 0; }
+.achievement strong { display: block; font-family: var(--serif); font-size: 1.05rem; font-weight: 500; color: var(--white); }
+.achievement span { display: block; font-size: 0.78rem; color: var(--white-mute); margin-top: 2px; }
+@media (max-width: 1024px) { .container { grid-template-columns: 1fr; gap: 3rem; } .frame { height: 420px; } }

@@ -1,0 +1,8 @@
+.experience { position: relative; padding: 10rem 2.5rem; overflow: hidden; }
+.videoBg { position: absolute; inset: 0; }
+.video { width: 100%; height: 100%; object-fit: cover; }
+.overlay { position: absolute; inset: 0; background: rgba(8,8,8,0.82); }
+.content { position: relative; z-index: 2; max-width: 640px; margin: 0 auto; text-align: center; }
+.desc { font-size: 1rem; color: var(--white-dim); line-height: 1.9; margin-bottom: 2.5rem; }
+.btn { display: inline-flex; align-items: center; background: transparent; color: var(--gold-light); padding: 0.9rem 2.4rem; border: 1px solid var(--gold); font-family: var(--sans); font-size: 0.78rem; font-weight: 500; letter-spacing: 0.15em; text-transform: uppercase; transition: var(--transition); }
+.btn:hover { background: var(--gold); color: var(--black); transform: translateY(-2px); }

@@ -1,0 +1,15 @@
+.reviews { padding: 8rem 2.5rem; background: var(--dark); }
+.container { max-width: 1200px; margin: 0 auto; }
+.grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 2rem; }
+.card { background: var(--dark-2); border: 1px solid rgba(201,168,76,0.08); padding: 2.5rem; transition: var(--transition); }
+.card:hover { border-color: rgba(201,168,76,0.25); transform: translateY(-4px); }
+.featured { background: var(--dark-3); border-color: rgba(201,168,76,0.25); position: relative; }
+.featured::before { content: '"'; position: absolute; top: -0.5rem; left: 1.5rem; font-family: var(--serif); font-size: 6rem; color: var(--gold); opacity: 0.15; line-height: 1; }
+.stars { color: var(--gold); font-size: 0.85rem; letter-spacing: 0.1em; margin-bottom: 1.25rem; }
+.text { font-family: var(--serif); font-size: 1.05rem; font-style: italic; color: var(--white-dim); line-height: 1.8; margin-bottom: 2rem; }
+.author { display: flex; align-items: center; gap: 1rem; }
+.avatar { width: 42px; height: 42px; background: var(--gold-dark); color: var(--black); font-size: 0.72rem; font-weight: 600; display: flex; align-items: center; justify-content: center; flex-shrink: 0; }
+.author strong { display: block; font-size: 0.9rem; font-weight: 500; color: var(--white); }
+.author span { display: block; font-size: 0.72rem; color: var(--white-mute); margin-top: 2px; }
+@media (max-width: 1024px) { .grid { grid-template-columns: 1fr 1fr; } }
+@media (max-width: 768px) { .grid { grid-template-columns: 1fr; } }
