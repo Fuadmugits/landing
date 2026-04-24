@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AURUM — Fine Dining Excellence</title>
+  <meta name="description" content="AURUM — Where culinary artistry meets timeless elegance. Experience the finest in contemporary fine dining with Michelin-starred cuisine in an intimate, luxurious setting." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500&family=Jost:wght@200;300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ===================== NAVIGATION ===================== -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="#hero" class="nav-logo">
+        <span class="logo-text">AURUM</span>
+        <span class="logo-tagline">Fine Dining</span>
+      </a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#menu" class="nav-link">Menu</a></li>
+        <li><a href="#chef" class="nav-link">Our Chef</a></li>
+        <li><a href="#reviews" class="nav-link">Reviews</a></li>
+      </ul>
+      <a href="#reservation" class="btn-reserve" id="btnReserve">Reserve a Table</a>
+      <button class="hamburger" id="hamburger" aria-label="Open menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ===================== HERO ===================== -->
+  <section class="hero" id="hero">
+    <div class="hero-video-wrapper">
+      <video autoplay muted loop playsinline class="hero-video" id="heroVideo">
+        <source src="Restaurant_cinematic_realistic_202604240945.mp4" type="video/mp4" />
+      </video>
+      <div class="hero-overlay"></div>
+    </div>
+    <div class="hero-content">
+      <p class="hero-eyebrow" data-aos="fade-up">Est. 2006 · Jakarta, Indonesia</p>
+      <h1 class="hero-title" data-aos="fade-up" data-aos-delay="100">
+        Where Every Dish<br />
+        <em>Tells a Story</em>
+      </h1>
+      <p class="hero-subtitle" data-aos="fade-up" data-aos-delay="200">
+        A celebration of seasonal ingredients, heritage techniques, and modern culinary vision.
+      </p>
+      <div class="hero-cta" data-aos="fade-up" data-aos-delay="300">
+        <a href="#reservation" class="btn-primary">Reserve Your Table</a>
+        <a href="#menu" class="btn-ghost">Explore Menu</a>
+      </div>
+    </div>
+    <div class="hero-scroll-hint">
+      <div class="scroll-line"></div>
+      <span>Scroll</span>
+    </div>
+  </section>
+
+  <!-- ===================== STATS RIBBON ===================== -->
+  <section class="stats-ribbon">
+    <div class="stats-container">
+      <div class="stat-item">
+        <span class="stat-number">18</span>
+        <span class="stat-label">Years of Excellence</span>
+      </div>
+      <div class="stat-divider"></div>
+      <div class="stat-item">
+        <span class="stat-number">3</span>
+        <span class="stat-label">Michelin Stars</span>
+      </div>
+      <div class="stat-divider"></div>
+      <div class="stat-item">
+        <span class="stat-number">56</span>
+        <span class="stat-label">Awards Won</span>
+      </div>
+      <div class="stat-divider"></div>
+      <div class="stat-item">
+        <span class="stat-number">12K+</span>
+        <span class="stat-label">Happy Guests</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== ABOUT ===================== -->
+  <section class="about" id="about">
+    <div class="about-container">
+      <div class="about-text" data-aos="fade-right">
+        <p class="section-eyebrow">Our Philosophy</p>
+        <h2 class="section-title">
+          A Sanctuary of<br /><em>Culinary Art</em>
+        </h2>
+        <p class="about-description">
+          At AURUM, dining is not merely sustenance — it is an immersive experience. 
+          Each plate is a canvas painted with precision, passion, and the finest locally sourced ingredients.
+          Our kitchen operates on the belief that extraordinary food is born from extraordinary dedication.
+        </p>
+        <p class="about-description">
+          Nestled in the heart of Jakarta, our intimate dining room seats just 40 guests per evening, 
+          ensuring a personal and unhurried experience that honours both our craft and your time.
+        </p>
+        <div class="about-signature">
+          <div class="signature-line"></div>
+          <div class="signature-info">
+            <span class="signature-name">Chef Marco Aurellio</span>
+            <span class="signature-role">Executive Chef & Founder</span>
+          </div>
+        </div>
+      </div>
+      <div class="about-visual" data-aos="fade-left">
+        <div class="about-image-frame">
+          <div class="frame-accent top-left"></div>
+          <div class="frame-accent bottom-right"></div>
+          <img src="chef.png" alt="Executive Chef Marco Aurellio" class="about-img" />
+        </div>
+        <div class="about-badge">
+          <span class="badge-year">2006</span>
+          <span class="badge-text">Est.</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== MENU ===================== -->
+  <section class="menu" id="menu">
+    <div class="menu-container">
+      <div class="section-header" data-aos="fade-up">
+        <p class="section-eyebrow">Signature Dishes</p>
+        <h2 class="section-title">Curated by Passion,<br /><em>Perfected by Craft</em></h2>
+        <p class="section-subtitle">Each dish is a masterpiece — a celebration of seasonal ingredients and culinary artistry.</p>
+      </div>
+      <div class="menu-grid">
+        <div class="menu-card" data-aos="fade-up" data-aos-delay="0">
+          <div class="menu-card-img-wrapper">
+            <img src="dish_duck.png" alt="Pan-Seared Duck Breast" class="menu-card-img" />
+            <div class="menu-card-overlay">
+              <span class="menu-card-tag">Signature</span>
+            </div>
+          </div>
+          <div class="menu-card-body">
+            <div class="menu-card-header">
+              <h3 class="menu-card-title">Pan-Seared Duck Breast</h3>
+              <span class="menu-card-price">Rp 485K</span>
+            </div>
+            <p class="menu-card-desc">Cherry reduction, foie gras torchon, microgreens, and gold leaf garnish on smoked black garlic purée.</p>
+            <div class="menu-card-tags">
+              <span class="tag">Main Course</span>
+              <span class="tag">Chef's Choice</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="menu-card" data-aos="fade-up" data-aos-delay="100">
+          <div class="menu-card-img-wrapper">
+            <img src="dish_seafood.png" alt="Saffron Lobster Risotto" class="menu-card-img" />
+            <div class="menu-card-overlay">
+              <span class="menu-card-tag">Premium</span>
+            </div>
+          </div>
+          <div class="menu-card-body">
+            <div class="menu-card-header">
+              <h3 class="menu-card-title">Saffron Lobster Risotto</h3>
+              <span class="menu-card-price">Rp 620K</span>
+            </div>
+            <p class="menu-card-desc">Butter-poached lobster tail, seared scallops, Oscietra caviar, aged Parmigiano, saffron broth.</p>
+            <div class="menu-card-tags">
+              <span class="tag">Seafood</span>
+              <span class="tag">Award Winner</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="menu-card" data-aos="fade-up" data-aos-delay="200">
+          <div class="menu-card-img-wrapper">
+            <img src="dish_dessert.png" alt="Dark Chocolate Fondant" class="menu-card-img" />
+            <div class="menu-card-overlay">
+              <span class="menu-card-tag">Dessert</span>
+            </div>
+          </div>
+          <div class="menu-card-body">
+            <div class="menu-card-header">
+              <h3 class="menu-card-title">Dark Chocolate Fondant</h3>
+              <span class="menu-card-price">Rp 285K</span>
+            </div>
+            <p class="menu-card-desc">Valrhona 70% couverture, raspberry coulis, vanilla bean cream, edible gold leaf dusting.</p>
+            <div class="menu-card-tags">
+              <span class="tag">Dessert</span>
+              <span class="tag">Gluten-Free Option</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="menu-cta" data-aos="fade-up">
+        <a href="#reservation" class="btn-primary">View Full Menu</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== CHEF ===================== -->
+  <section class="chef" id="chef">
+    <div class="chef-container">
+      <div class="chef-visual" data-aos="fade-right">
+        <div class="chef-img-frame">
+          <img src="chef.png" alt="Chef Marco Aurellio" class="chef-img" />
+          <div class="chef-img-accent"></div>
+        </div>
+      </div>
+      <div class="chef-content" data-aos="fade-left">
+        <p class="section-eyebrow">Meet The Visionary</p>
+        <h2 class="section-title">Chef Marco<br /><em>Aurellio</em></h2>
+        <p class="chef-bio">
+          With over two decades sculpting menus across Paris, Tokyo, and New York, 
+          Chef Marco Aurellio returned to his roots to create something singular — 
+          a restaurant that bridges Indonesian heritage with world-class technique.
+        </p>
+        <p class="chef-bio">
+          A graduate of Le Cordon Bleu Paris and alumnus of three Michelin-starred kitchens, 
+          his philosophy is simple: let the ingredient lead, and let the craft follow.
+        </p>
+        <div class="chef-achievements">
+          <div class="achievement">
+            <span class="achievement-icon">★</span>
+            <div>
+              <strong>3 Michelin Stars</strong>
+              <span>Consecutive since 2018</span>
+            </div>
+          </div>
+          <div class="achievement">
+            <span class="achievement-icon">◈</span>
+            <div>
+              <strong>Asia's 50 Best</strong>
+              <span>Top 10 – 2022 & 2023</span>
+            </div>
+          </div>
+          <div class="achievement">
+            <span class="achievement-icon">◆</span>
+            <div>
+              <strong>James Beard Award</strong>
+              <span>Outstanding Chef – 2021</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== EXPERIENCE ===================== -->
+  <section class="experience">
+    <div class="experience-video-bg">
+      <video autoplay muted loop playsinline class="exp-video">
+        <source src="Restaurant_cinematic_realistic_202604240945.mp4" type="video/mp4" />
+      </video>
+      <div class="exp-overlay"></div>
+    </div>
+    <div class="experience-content" data-aos="fade-up">
+      <p class="section-eyebrow light">The Experience</p>
+      <h2 class="section-title light">An Evening Unlike<br /><em>Any Other</em></h2>
+      <p class="experience-desc">
+        From the moment you enter our doors, every detail has been considered. 
+        Our sommelier-curated wine list, bespoke cocktail programme, and 
+        live ambient jazz create an atmosphere of effortless luxury.
+      </p>
+      <a href="#reservation" class="btn-primary-light">Begin Your Experience</a>
+    </div>
+  </section>
+
+  <!-- ===================== REVIEWS ===================== -->
+  <section class="reviews" id="reviews">
+    <div class="reviews-container">
+      <div class="section-header" data-aos="fade-up">
+        <p class="section-eyebrow">Testimonials</p>
+        <h2 class="section-title">Words From Our<br /><em>Cherished Guests</em></h2>
+      </div>
+      <div class="reviews-grid">
+        <div class="review-card" data-aos="fade-up" data-aos-delay="0">
+          <div class="review-stars">★★★★★</div>
+          <p class="review-text">
+            "AURUM is not a restaurant — it is a theatre of the senses. 
+            The duck breast alone was worth flying from Singapore for. 
+            Absolutely transcendent."
+          </p>
+          <div class="review-author">
+            <div class="review-avatar">RS</div>
+            <div>
+              <strong>Rachel Summers</strong>
+              <span>Food Critic, The Straits Times</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="review-card featured" data-aos="fade-up" data-aos-delay="100">
+          <div class="review-stars">★★★★★</div>
+          <p class="review-text">
+            "A masterclass in restraint and precision. Chef Marco understands that 
+            luxury is not about excess — it is about perfection. One of the finest 
+            meals of my life."
+          </p>
+          <div class="review-author">
+            <div class="review-avatar">JL</div>
+            <div>
+              <strong>Jean-Luc Moreau</strong>
+              <span>Michelin Guide Inspector</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="review-card" data-aos="fade-up" data-aos-delay="200">
+          <div class="review-stars">★★★★★</div>
+          <p class="review-text">
+            "We celebrated our anniversary here and it exceeded every expectation. 
+            The service was impeccable, the atmosphere intimate, and every bite was poetry."
+          </p>
+          <div class="review-author">
+            <div class="review-avatar">AP</div>
+            <div>
+              <strong>Amara & Priya Patel</strong>
+              <span>Loyal Guests since 2017</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== RESERVATION ===================== -->
+  <section class="reservation" id="reservation">
+    <div class="reservation-container">
+      <div class="reservation-info" data-aos="fade-right">
+        <p class="section-eyebrow">Reserve a Table</p>
+        <h2 class="section-title">Begin Your<br /><em>Journey with Us</em></h2>
+        <p class="reservation-desc">
+          Secure your table for an unforgettable evening. We recommend booking 
+          at least 2 weeks in advance. For private dining and events, please contact us directly.
+        </p>
+        <div class="contact-details">
+          <div class="contact-item">
+            <span class="contact-icon">◎</span>
+            <div>
+              <strong>Address</strong>
+              <span>Jl. Sudirman No. 1, SCBD, Jakarta Selatan 12190</span>
+            </div>
+          </div>
+          <div class="contact-item">
+            <span class="contact-icon">◎</span>
+            <div>
+              <strong>Reservations</strong>
+              <span>+62 21 5050 8888</span>
+            </div>
+          </div>
+          <div class="contact-item">
+            <span class="contact-icon">◎</span>
+            <div>
+              <strong>Opening Hours</strong>
+              <span>Tue – Sun · 6:00 PM – 11:00 PM</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="reservation-form" data-aos="fade-left">
+        <form id="reservationForm" class="form" novalidate>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="firstName">First Name</label>
+              <input type="text" id="firstName" name="firstName" placeholder="Marco" required />
+            </div>
+            <div class="form-group">
+              <label for="lastName">Last Name</label>
+              <input type="text" id="lastName" name="lastName" placeholder="Aurellio" required />
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="email">Email Address</label>
+            <input type="email" id="email" name="email" placeholder="marco@example.com" required />
+          </div>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="date">Preferred Date</label>
+              <input type="date" id="date" name="date" required />
+            </div>
+            <div class="form-group">
+              <label for="time">Preferred Time</label>
+              <select id="time" name="time" required>
+                <option value="" disabled selected>Select time</option>
+                <option value="18:00">6:00 PM</option>
+                <option value="18:30">6:30 PM</option>
+                <option value="19:00">7:00 PM</option>
+                <option value="19:30">7:30 PM</option>
+                <option value="20:00">8:00 PM</option>
+                <option value="20:30">8:30 PM</option>
+                <option value="21:00">9:00 PM</option>
+              </select>
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="guests">Number of Guests</label>
+            <select id="guests" name="guests" required>
+              <option value="" disabled selected>Select guests</option>
+              <option value="1">1 Guest</option>
+              <option value="2">2 Guests</option>
+              <option value="3">3 Guests</option>
+              <option value="4">4 Guests</option>
+              <option value="5">5 Guests</option>
+              <option value="6">6 Guests</option>
+              <option value="7+">7+ Guests (Private Dining)</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="notes">Special Requests</label>
+            <textarea id="notes" name="notes" placeholder="Dietary requirements, special occasions, seating preferences…" rows="3"></textarea>
+          </div>
+          <button type="submit" class="btn-submit" id="submitBtn">
+            <span>Confirm Reservation</span>
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M5 12h14M12 5l7 7-7 7"/>
+            </svg>
+          </button>
+        </form>
+        <div class="form-success" id="formSuccess">
+          <div class="success-icon">✓</div>
+          <h3>Reservation Received</h3>
+          <p>We will confirm your booking within 24 hours. We look forward to welcoming you.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== FOOTER ===================== -->
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-brand">
+        <span class="footer-logo">AURUM</span>
+        <p class="footer-tagline">Where Every Dish Tells a Story</p>
+        <div class="footer-social">
+          <a href="#" class="social-link" aria-label="Instagram">IG</a>
+          <a href="#" class="social-link" aria-label="Facebook">FB</a>
+          <a href="#" class="social-link" aria-label="Twitter">TW</a>
+        </div>
+      </div>
+      <div class="footer-links">
+        <div class="footer-col">
+          <h4>Navigate</h4>
+          <ul>
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#menu">Our Menu</a></li>
+            <li><a href="#chef">Meet The Chef</a></li>
+            <li><a href="#reviews">Testimonials</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Visit</h4>
+          <ul>
+            <li>Jl. Sudirman No. 1</li>
+            <li>SCBD, Jakarta Selatan</li>
+            <li>+62 21 5050 8888</li>
+            <li>hello@aurum.id</li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Hours</h4>
+          <ul>
+            <li>Tuesday – Sunday</li>
+            <li>6:00 PM – 11:00 PM</li>
+            <li>&nbsp;</li>
+            <li>Monday: Closed</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2024 AURUM Fine Dining. All rights reserved.</p>
+      <div class="footer-bottom-links">
+        <a href="#">Privacy Policy</a>
+        <a href="#">Terms of Service</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>
